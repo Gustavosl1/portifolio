@@ -1,6 +1,6 @@
 :root {
     --main-white: #f0f0f0;
-    --main-red: #be3144;
+    --main-green: rgb(99, 233, 10);
     --main-blue: #000000;
     --main-gray: #ff0627;
   }
@@ -16,6 +16,9 @@ html {
   scroll-behavior: smooth;
 }
 
+*{
+  box-sizing: border-box;
+}
 
 
 /* Base styles */
@@ -26,6 +29,7 @@ body {
   font-weight: 400;
   line-height: 1.4;
   color: var(--main-white);
+ 
 }
 
 h1,
@@ -58,7 +62,7 @@ a{
 }
 
 a:hover{
-    background: #be3144;
+    background: rgb(99, 233, 10);
     border-radius: 20px;
 }
 
@@ -174,7 +178,7 @@ body, html {
     height: 100vh;
     background-image:linear-gradient(  115deg, rgba(0, 0, 0, 0.9),rgba(10, 10, 10, 0.8) 
     ),
-      url(https://s17026.pcdn.co/wp-content/uploads/sites/9/2017/05/Web-developer.jpeg);
+      url(https://images.pexels.com/photos/546819/pexels-photo-546819.jpeg?auto=compress&cs=tinysrgb&w=1600);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -184,7 +188,7 @@ body, html {
     font-size: 1.7rem;
     font-weight: 300;
     font-style: italic;
-    color: var(--main-red);
+    color: var(--main-green);
     align-items: center;
   }
   
@@ -269,3 +273,130 @@ body, html {
       flex-direction: column;
     }
   }
+section .list-program{
+  display: inline-flex;
+  text-align: center;
+ 
+}
+
+.list-program{
+  transition: all 0.4s ease-out;
+}
+
+.icone{
+  transition: all 0.4s ease-out;
+  border-radius: 50%;
+}
+
+.icone:hover{
+  cursor: pointer;
+  transform: translateY(-20px);
+  box-shadow: 4px 30px 16px 0px green;
+}
+
+
+.container1{
+  display: flex;
+  width: 100%;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+/* Cards */
+
+.card{
+  width: 300px;
+  height: 460px;
+  margin: 25px;
+  background-color: #ffff;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0px 0px  10px greenyellow;
+  transition: 0.3;
+}
+
+/* Card Header*/
+
+.card-header{
+  width: 100%;
+  height: 200px;
+  overflow: hidden;
+}
+
+.card-img{
+  min-width: 100%;
+  width: auto;
+  height: 100%;
+}
+
+/* Card body*/
+.card-body{
+  height: 170px;
+  padding: 15px;
+  text-align: center;
+  font-family: sans-serif;
+}
+
+.card-local{
+  color: black;
+  font-size: 16px;
+  margin: 10px 0;
+}
+
+.card-titulo{
+  color: #000000;
+  font-size: 32px;
+  margin: 15px 0;
+
+}
+
+.card-texto{
+  color: #000000;
+  font-size: 12px;
+  width: 250px;
+  margin: 0 auto;
+}
+
+/* Card footer*/
+.card-footer{
+  margin-top: 10px;
+  text-align: center;
+  background-color: #000000;
+}
+
+.card-footer a{
+  color: #ffff;
+  display: block;
+  padding: 30px;
+  text-decoration: none;
+  font-family: sans-serif;
+  font-weight: 600;
+}
+
+/*Cores Cards*/
+.card-1 .card-footer{
+  background-color: #33da0a;
+}
+
+/* Animação*/
+.card:hover{
+  transform: scale3d(1.1, 1.1, 1);
+}
+
+.me{
+  width: 300px;
+  margin: auto;
+  background-image: linear-gradient(0deg, rgba(14,230,230,1) 0%, rgba(65,253,45,1) 100%);
+  border-radius: 50%;
+  display: flex;
+  padding: 4px;
+ 
+}
+
+.me img{
+  width: 100%;
+  border-radius: 50%;
+}
+
+.sobre-mim{
+  text-align: center ;
+}
